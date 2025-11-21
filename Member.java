@@ -8,6 +8,17 @@ public class Member {
 	private int numBorrows;
 	private int numReturns;
 	private double sessionFees;
+	public static double TotalRevenue = 0.0;
+	public static int TotalViewBorrowed = 0;
+	public static int TotalBorrows = 0;
+	public static int TotalReturns = 0;
+	
+	public Member(int id, String name, int borrowedCount)
+	{
+		this.id= id;
+		this.name= name;
+		this.borrowedCount= borrowedCount;
+	}
 	private boolean canBorrow()
 	{
 		return borrowedCount < 5;
