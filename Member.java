@@ -27,6 +27,7 @@ public class Member {
 			System.out.println("You can't borrow more than 5 books.\nLeave books for others :)   and enjoy the books you own.");
 			return false;
 		}
+	  
     }
 	
 	
@@ -47,6 +48,7 @@ public class Member {
 			System.out.println("You can't return a book.\nYou don't have any one :)   go and borrow one, man.");
 			return false;
 		}
+		
       }
 	
 	
@@ -58,7 +60,6 @@ public class Member {
 		System.out.println("The number of Returned books is: "+ numReturns);
 		System.out.println("The number of times you view Borrowed Count  is: "+ numViewBorrowed);
 		System.out.printf("Fees imposed is: %.2f\n", sessionFees);
-
 	}
 	
 	
