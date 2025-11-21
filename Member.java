@@ -74,22 +74,32 @@ public class Member {
 	}
 	
 	
-  public void setName(String name) {
+  public void setName(String name) 
+  {
     this.name = name;
   }
-  public String getName() {
+  public String getName() 
+  {
     return name;
   }
-  public void setId(int id) {
+
+	
+  public void setId(int id) 
+  {
     this.id = id;
   }
-  public int getId() {
+  public int getId() 
+  {
     return id;
   }
-  public void setBorrowedCount(int borrowedCount) {
+
+	
+  public void setBorrowedCount(int borrowedCount)
+  {
     this.borrowedCount = borrowedCount;
   }
-  public int getBorrowedCount() {
+  public int getBorrowedCount() 
+  {
     return borrowedCount;
   }
   public void setSessionFees(double sessionFees) {
