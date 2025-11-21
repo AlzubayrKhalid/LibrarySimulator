@@ -102,9 +102,16 @@ public class Member {
   {
     return borrowedCount;
   }
-  public void setSessionFees(double sessionFees) {
+
+	
+  public void setSessionFees(double sessionFees) 
+  {
     this.sessionFees = sessionFees;
   }
-  public double getSessionFees() {
+  public double getSessionFees() 
+  {
     return sessionFees;
+  }
+
+
 }
