@@ -23,7 +23,7 @@ public class LibrarySimulator {
         
         // Do this loop while the user hasn't chosen to exit to main menu (5)
         do{
-            System.out.printf("[1] Login as Account 1 (Username: %s, ID: %d)\n", user1.getName(), user1.getId());
+            System.out.printf("\n\n[1] Login as Account 1 (Username: %s, ID: %d)\n", user1.getName(), user1.getId());
             System.out.printf("[2] Login as Account 2 (Username: %s, ID: %d)\n", user2.getName(), user2.getId());
             System.out.printf("[3] Login as Account 3 (Username: %s, ID: %d)\n", user3.getName(), user3.getId());
             System.out.println("[4] Login as Administrator");
