@@ -36,7 +36,8 @@ public class LibrarySimulator {
             	
             
             
-            switch(mainMenuChoice){
+            switch(mainMenuChoice)
+			{
                 case 1:
                 case 2:
                 case 3:
@@ -79,8 +80,8 @@ public class LibrarySimulator {
                               
                             default:
                             	System.out.println("ERROR: Please input a choice between 1 and 5!");
-                        }
-                    }while(userMenuChoice != 5);
+                         }
+                      }while(userMenuChoice != 5);
                     break;
                 
                     
@@ -95,7 +96,8 @@ public class LibrarySimulator {
                         System.out.print("\nPlease select an option: ");
                         adminMenuChoice = input.nextInt();
                         
-                        switch(adminMenuChoice){
+                        switch(adminMenuChoice)
+						{
                         
                             case 1:
                                 System.out.printf("Total Revenue: %.2f\n", Member.TotalRevenue );
@@ -133,15 +135,15 @@ public class LibrarySimulator {
                             default:
                             	System.out.println("ERROR: Please input a choice between 1 and 3!");
                         }
-                    }while(adminMenuChoice != 3);
+                      }while(adminMenuChoice != 3);
                     break;
                     
                 case 5:
                     break;
                     
                 default: System.out.println("ERROR: Please input a choice between 1 and 5!");
-            }
-        }while(mainMenuChoice != 5);
+               }
+             }while(mainMenuChoice != 5);
 
 
 		
