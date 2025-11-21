@@ -4,7 +4,6 @@
 // Abdulrahman Albakoush   : 446109795
 // Abdulelah Alamoudi      : 446108698
 
-package projectCSC111;
 import java.util.Scanner;
 
 public class LibrarySimulator {
