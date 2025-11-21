@@ -1,3 +1,7 @@
+// Alzubayr AbdulHafith    : 446109412
+// Abdulrahman Albakoush   : 446109795
+// Abdulelah Alamoudi      : 446108698
+
 package projectCSC111;
 import java.util.Scanner;
 
@@ -16,7 +20,7 @@ public class LibrarySimulator {
         System.out.println("Welcome to the program!");
         
         
-        
+        // Do this loop while the user hasn't chosen to exit to main menu (5)
         do{
             System.out.printf("[1] Login as Account 1 (Username: %s, ID: %d)\n", user1.getName(), user1.getId());
             System.out.printf("[2] Login as Account 2 (Username: %s, ID: %d)\n", user2.getName(), user2.getId());
@@ -27,6 +31,7 @@ public class LibrarySimulator {
             mainMenuChoice = input.nextInt();
             Member currentUser;
 
+			// Checks the selected user and transfers the information to a new object that represents the current user
             if (mainMenuChoice==1)
             	currentUser = user1;
             else if (mainMenuChoice==2)
@@ -38,14 +43,11 @@ public class LibrarySimulator {
             
             switch(mainMenuChoice)
 			{
+				// Do this if the user chose to login to an account
                 case 1:
                 case 2:
                 case 3:
-                    // Resetting parameters for each session
                     // Do this loop while the user hasn't chosen to exit to main menu (5)
-                    // When the user exits the program, Check which account they chose and assign 
-                    // the session parameter values to the specific account parameter values, then
-                    // exit to the main menu.
                     do{
                         System.out.println("\n\n[1] Show Currently Borrowed Books");
                         System.out.println("[2] Borrow Book");
@@ -75,6 +77,7 @@ public class LibrarySimulator {
                             	break;
                             
                             case 5: 
+								// Resetting parameters for each session
                                 currentUser.reset();
                                 break;
                               
