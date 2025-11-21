@@ -1,6 +1,22 @@
 // https://github.com/AlzubayrKhalid/LibrarySimulator
 
 public class Member {
+	private int id;
+	private String name;
+	private int borrowedCount;
+	private int numViewBorrowed;
+	private int numBorrows;
+	private int numReturns;
+	private double sessionFees;
+	private boolean canBorrow()
+	{
+		return borrowedCount < 5;
+	}
+	private boolean canReturn()
+	{
+		return borrowedCount > 0;
+	}
+	
 
   public void viewBorrowedCount()
   {
