@@ -58,12 +58,12 @@ public class Member {
 		System.out.println("The Session statistics for "+ name + ", who has ID: (" + id +")   is: \n");
 		System.out.println("The number of Borrowed books is: "+ numBorrows);
 		System.out.println("The number of Returned books is: "+ numReturns);
-		System.out.println("The number of times you view Borrowed Count  is: "+ numViewBorrowed);
+		System.out.println("The number of times you view your Borrowed Count is: "+ numViewBorrowed);
 		System.out.printf("Fees imposed is: %.2f\n", sessionFees);
 	}
 	
 	
-	
+	// Resets parameters for each session
 	public void reset()
 	{
 		borrowedCount=0;
@@ -73,7 +73,7 @@ public class Member {
 		sessionFees=0.0;
 	}
 	
-	
+  // Setters, Getters
   public void setName(String name) 
   {
     this.name = name;
