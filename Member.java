@@ -1,16 +1,16 @@
 public class Member {
 
   public void viewBorrowedCount()
-	{
+  {
 		numViewBorrowed++;
 		TotalViewBorrowed++;
 		System.out.println("The number of current borrowed book is: "+ borrowedCount);
-	}
+  }
 	
 	
 	
-	public boolean borrowOne()
-	{
+  public boolean borrowOne()
+  {
 		if (canBorrow())
 		{
 		borrowedCount++;
@@ -27,7 +27,7 @@ public class Member {
 			System.out.println("You can't borrow more than 5 books.\nLeave books for others :)   and enjoy the books you own.");
 			return false;
 		}
-	}
+    }
 	
 	
 	
@@ -47,7 +47,7 @@ public class Member {
 			System.out.println("You can't return a book.\nYou don't have any one :)   go and borrow one, man.");
 			return false;
 		}
-	 }
+      }
 	
 	
 	
